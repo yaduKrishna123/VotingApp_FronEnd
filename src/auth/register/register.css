@@ -1,0 +1,149 @@
+
+/* .data{
+    overflow: hidden;
+} */
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+.data {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(204, 204, 180), rgb(90, 64, 109));
+    overflow: hidden;
+  
+  }
+  
+  .bubble {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+ 
+    background: linear-gradient(to bottom, rgb(198, 198, 27), rgb(226, 158, 10));
+    border-radius: 50%;
+    animation: bubbleAnimation 5s infinite;
+  }
+  .bubble3 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    background: linear-gradient(to bottom, rgb(65, 65, 5), rgb(10, 226, 35));
+    border-radius: 50%;
+    animation: bubbleAnimationz 5s infinite;
+    margin-left: -5%;
+  }
+  /* .wallet{
+    position: absolute;
+    width: 10%;
+    height: 80px;
+    margin-left: -4%;
+   
+    background: rgba(223, 0, 175, 0.5);
+    border-radius: 10%;
+  } */
+  
+  @keyframes bubbleAnimation {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-200px) scale(1.5);
+    }
+    100% {
+      transform: translateY(-400px) scale(1);
+    }
+  }
+
+@media screen and (max-width: 768px) {
+ 
+    .reg_background{
+        height: 300px;
+
+    
+  }
+}
+  
+.bubble1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(27, 198, 115) rgb(226, 158, 10));
+    border-radius: 50%;
+
+  
+    animation: bubbleAnimations 5s infinite;
+  }
+  
+  @keyframes bubbleAnimations {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    50% {
+      transform: translateX(-200px) scale(1.5);
+    }
+    100% {
+      transform: translateX(-400px) scale(1);
+    }
+  }
+  @keyframes bubbleAnimationz {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(200px) scale(1.5);
+    }
+    100% {
+      transform: translateY(400px) scale(1);
+    }
+  }
+
+@media screen and (max-width: 768px) {
+ 
+    .reg_background{
+        height: 300px;
+
+    
+  }
+}
+  
+.bubble2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(45, 45, 7), rgb(226, 10, 212));
+    border-radius: 50%;
+
+
+    animation: bubbleAnimations1 5s infinite;
+  }
+  
+  @keyframes bubbleAnimations1 {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    50% {
+      transform: translateX(200px) scale(1.5);
+    }
+    100% {
+      transform: translateX(400px) scale(1);
+    }
+  }
+
+@media screen and (max-width: 768px) {
+ 
+    .reg_background{
+        height: 300px;
+
+    
+  }
+}
+  

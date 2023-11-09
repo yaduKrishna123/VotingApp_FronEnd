@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import '../src/bootstrap.min.css';
+import Register from './auth/register/Register';
+import './bootstrap.min.css'
+import Login from './auth/login/Login';
+import Dashboard from './home/Dashboard';
+import Chat from './home/components/Chat';
+import PrivateMessage from './home/components/PrivateMessage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes>
+      <Route path='/' element={<Register/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/chat' element={<PrivateMessage/>}/>
+      <Route path='/sendchat' element={<Chat/>}/>
+
+    </Routes>
+
+    </>
   );
 }
 

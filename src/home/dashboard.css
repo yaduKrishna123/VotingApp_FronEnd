@@ -1,0 +1,9 @@
+.rgb{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgb(148, 176, 223), rgb(170, 135, 194));
+}
